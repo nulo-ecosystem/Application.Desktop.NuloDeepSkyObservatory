@@ -3,11 +3,38 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net8.0-windows</TargetFramework>
-    <RootNamespace>Nulo_Deep_Sky_Observatory</RootNamespace>
-    <Nullable>enable</Nullable>
+    <RootNamespace>Nulo</RootNamespace>
+    <Nullable>disable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <StartupObject>Nulo.Program</StartupObject>
+    <AssemblyName>Nulo Deep Sky Observatory 2024</AssemblyName>
+    <ApplicationIcon>Resources\Icon.ico</ApplicationIcon>
+    <IsPublishable>False</IsPublishable>
+    <ProduceReferenceAssembly>False</ProduceReferenceAssembly>
+    <ErrorReport>none</ErrorReport>
+    <Version>2024.1.0</Version>
+    <Authors>kastney</Authors>
+    <Company>Nulo Ecosystem</Company>
+    <Product>Nulo Deep Sky Observatory ®</Product>
+    <Copyright>Copyright © 2024 Nulo Ecosystem</Copyright>
   </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>none</DebugType>
+    <WarningLevel>0</WarningLevel>
+    <Deterministic>False</Deterministic>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>none</DebugType>
+    <WarningLevel>0</WarningLevel>
+    <Deterministic>False</Deterministic>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\Icon.ico" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Nulo.Modules.MultiLanguageManager" Version="1.0.2" />

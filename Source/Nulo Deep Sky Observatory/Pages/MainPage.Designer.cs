@@ -121,7 +121,7 @@
             MinimumSize = new Size(1080, 720);
             Name = "MainPage";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Nulo Multimedia Studio 2024";
+            Text = "Nulo Deep Sky Observatory 2024";
             WindowState = FormWindowState.Maximized;
             FormClosing += MainPage_FormClosing;
             MenuStrip.ResumeLayout(false);

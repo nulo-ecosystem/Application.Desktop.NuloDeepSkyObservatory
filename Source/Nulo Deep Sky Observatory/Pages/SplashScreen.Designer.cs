@@ -46,7 +46,7 @@
             SplashImage.Image = Properties.Resources.Splash;
             SplashImage.Location = new Point(0, 0);
             SplashImage.Name = "SplashImage";
-            SplashImage.Size = new Size(1080, 520);
+            SplashImage.Size = new Size(1080, 518);
             SplashImage.SizeMode = PictureBoxSizeMode.CenterImage;
             SplashImage.TabIndex = 0;
             SplashImage.TabStop = false;
@@ -150,11 +150,11 @@
             // 
             // SmallBarPanel
             // 
-            SmallBarPanel.BackColor = Color.FromArgb(33, 154, 202);
+            SmallBarPanel.BackColor = Color.FromArgb(149, 67, 146);
             SmallBarPanel.Dock = DockStyle.Bottom;
-            SmallBarPanel.Location = new Point(0, 520);
+            SmallBarPanel.Location = new Point(0, 518);
             SmallBarPanel.Name = "SmallBarPanel";
-            SmallBarPanel.Size = new Size(1080, 5);
+            SmallBarPanel.Size = new Size(1080, 7);
             SmallBarPanel.TabIndex = 2;
             // 
             // SplashScreen

@@ -36,7 +36,7 @@ namespace Nulo {
             WorkspaceManager = new WorkspaceManager<WorkspaceTheme, WorkspaceData>();
 
             Application.DoEvents();
-            Thread.Sleep(500);
+             Thread.Sleep(500);
 
             #endregion Workspace Manager
 

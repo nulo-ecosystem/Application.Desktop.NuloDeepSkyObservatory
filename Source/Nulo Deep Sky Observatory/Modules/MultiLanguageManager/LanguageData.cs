@@ -1,6 +1,4 @@
-﻿using System.Globalization;
-
-namespace Nulo.Modules.MultiLanguageManager {
+﻿namespace Nulo.Modules.MultiLanguageManager {
 
     internal class LanguageData : ILanguageData {
 

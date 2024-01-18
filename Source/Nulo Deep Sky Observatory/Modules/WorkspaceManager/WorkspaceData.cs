@@ -79,8 +79,8 @@ namespace Nulo.Modules.WorkspaceManager {
 
         public Texts GetTexts() {
             return new Texts {
-                SaveMenuItem = Program.MultiLanguageManager.GetText("MenuWindowWorkspacesSave"),
-                DeleteMenuItem = Program.MultiLanguageManager.GetText("MenuWindowWorkspacesDelete"),
+                SaveMenuItem = Program.MultiLanguageManager.GetText("Menu_Window_Workspaces_Save"),
+                DeleteMenuItem = Program.MultiLanguageManager.GetText("Menu_Window_Workspaces_Delete"),
 
                 NewWorkspaceTitle = Program.MultiLanguageManager.GetText("Dialog_NewWorkspace_Title"),
                 NewWorkspaceName = Program.MultiLanguageManager.GetText("Dialog_NewWorkspace_Name"),
@@ -90,8 +90,8 @@ namespace Nulo.Modules.WorkspaceManager {
                 DeleteWorkspaceTitle = Program.MultiLanguageManager.GetText("Dialog_DeleteWorkspace_Title"),
                 DeleteWorkspaceSelect = Program.MultiLanguageManager.GetText("Dialog_DeleteWorkspace_Select"),
 
-                CommandSave = Program.MultiLanguageManager.GetText("CommandSave"),
-                CommandDelete = Program.MultiLanguageManager.GetText("CommandDelete")
+                CommandSave = Program.MultiLanguageManager.GetText("Command_Save"),
+                CommandDelete = Program.MultiLanguageManager.GetText("Command_Delete")
             };
         }
 

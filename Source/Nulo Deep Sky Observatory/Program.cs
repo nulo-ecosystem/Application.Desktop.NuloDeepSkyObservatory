@@ -22,7 +22,7 @@ namespace Nulo {
 
             #region Multi-Language Manager
 
-            splash.StatusLabel.Text = "...";
+            splash.SetStatusLabel("...");
             MultiLanguageManager = new MultiLanguageManager<LanguageData>("Nulo.Modules.MultiLanguageManager.Language");
 
             Application.DoEvents();
@@ -32,7 +32,7 @@ namespace Nulo {
 
             #region Workspace Manager
 
-            splash.StatusLabel.Text = MultiLanguageManager.GetText("Pages_SplashScreen_WorkspaceManager");
+            splash.SetStatusLabel(MultiLanguageManager.GetText("Pages_SplashScreen_WorkspaceManager"));
             WorkspaceManager = new WorkspaceManager<WorkspaceTheme, WorkspaceData>();
 
             Application.DoEvents();
@@ -40,7 +40,7 @@ namespace Nulo {
 
             #endregion Workspace Manager
 
-            splash.StatusLabel.Text = string.Empty;
+            splash.SetStatusLabel(string.Empty);
             Application.DoEvents();
             Thread.Sleep(500);
             splash.Dispose();

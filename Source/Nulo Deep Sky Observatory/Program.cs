@@ -1,6 +1,6 @@
 using Nulo.Modules.MultiLanguageManager;
 using Nulo.Modules.WorkspaceManager;
-using Nulo.Pages;
+using Nulo.Core.Pages;
 
 namespace Nulo {
 
@@ -36,7 +36,7 @@ namespace Nulo {
             WorkspaceManager = new WorkspaceManager<WorkspaceTheme, WorkspaceData>();
 
             Application.DoEvents();
-             Thread.Sleep(500);
+            Thread.Sleep(500);
 
             #endregion Workspace Manager
 

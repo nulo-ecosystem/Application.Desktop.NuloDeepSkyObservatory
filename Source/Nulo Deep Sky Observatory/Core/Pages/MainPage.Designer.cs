@@ -1,4 +1,4 @@
-﻿namespace Nulo.Pages {
+﻿namespace Nulo.Core.Pages {
     partial class MainPage {
         /// <summary>
         /// Required designer variable.

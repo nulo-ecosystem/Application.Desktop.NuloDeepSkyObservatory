@@ -1,6 +1,6 @@
 ﻿using Nulo.Modules.WorkspaceManager.Docking;
 
-namespace Nulo.Pages {
+namespace Nulo.Core.Pages {
 
     public partial class MainPage : Form {
 

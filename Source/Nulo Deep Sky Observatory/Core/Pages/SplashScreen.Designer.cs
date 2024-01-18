@@ -1,4 +1,4 @@
-﻿namespace Nulo.Pages {
+﻿namespace Nulo.Core.Pages {
     partial class SplashScreen {
         /// <summary>
         /// Required designer variable.

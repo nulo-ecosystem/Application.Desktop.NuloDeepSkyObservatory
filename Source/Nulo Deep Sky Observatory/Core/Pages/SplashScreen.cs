@@ -1,6 +1,6 @@
-﻿using Nulo.Utilities;
+﻿using Nulo.Core.Utilities;
 
-namespace Nulo.Pages {
+namespace Nulo.Core.Pages {
 
     public partial class SplashScreen : Form {
 

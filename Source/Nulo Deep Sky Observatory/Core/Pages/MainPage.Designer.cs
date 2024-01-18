@@ -26,13 +26,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainPage));
             DockPanel = new Panel();
             MenuStrip = new MenuStrip();
-            MenuStripWindow = new ToolStripMenuItem();
-            MenuStripWindowWorkspaces = new ToolStripMenuItem();
             ToolStrip = new ToolStrip();
             ToolStripWorkspaces = new ToolStripDropDownButton();
             StatusStrip = new StatusStrip();
             TopPanel = new Panel();
-            MenuStrip.SuspendLayout();
             ToolStrip.SuspendLayout();
             TopPanel.SuspendLayout();
             SuspendLayout();
@@ -49,25 +46,10 @@
             // 
             MenuStrip.Dock = DockStyle.Fill;
             MenuStrip.ImageScalingSize = new Size(24, 24);
-            MenuStrip.Items.AddRange(new ToolStripItem[] { MenuStripWindow });
             MenuStrip.Location = new Point(0, 0);
             MenuStrip.Name = "MenuStrip";
             MenuStrip.Size = new Size(1012, 39);
             MenuStrip.TabIndex = 0;
-            // 
-            // MenuStripWindow
-            // 
-            MenuStripWindow.DropDownItems.AddRange(new ToolStripItem[] { MenuStripWindowWorkspaces });
-            MenuStripWindow.Name = "MenuStripWindow";
-            MenuStripWindow.Size = new Size(94, 35);
-            MenuStripWindow.Text = "Window";
-            // 
-            // MenuStripWindowWorkspaces
-            // 
-            MenuStripWindowWorkspaces.Image = Properties.Resources.IconWorkspaces;
-            MenuStripWindowWorkspaces.Name = "MenuStripWindowWorkspaces";
-            MenuStripWindowWorkspaces.Size = new Size(209, 34);
-            MenuStripWindowWorkspaces.Text = "Workspaces";
             // 
             // ToolStrip
             // 
@@ -124,8 +106,6 @@
             Text = "Nulo Deep Sky Observatory 2024";
             WindowState = FormWindowState.Maximized;
             FormClosing += MainPage_FormClosing;
-            MenuStrip.ResumeLayout(false);
-            MenuStrip.PerformLayout();
             ToolStrip.ResumeLayout(false);
             ToolStrip.PerformLayout();
             TopPanel.ResumeLayout(false);
@@ -141,8 +121,6 @@
         private System.Windows.Forms.ToolStrip ToolStrip;
         private System.Windows.Forms.StatusStrip StatusStrip;
         private System.Windows.Forms.ToolStripDropDownButton ToolStripWorkspaces;
-        private ToolStripMenuItem MenuStripWindow;
-        private ToolStripMenuItem MenuStripWindowWorkspaces;
         private Panel TopPanel;
     }
 }

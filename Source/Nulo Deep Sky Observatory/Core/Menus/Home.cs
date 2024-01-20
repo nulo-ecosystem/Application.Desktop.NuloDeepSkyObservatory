@@ -13,7 +13,7 @@ namespace Nulo.Core.Menus {
         #endregion Properties
     }
 
-    [Route("home/exit")]
+    [Route("home/exit"), ShortcutKeys(Keys.Alt | Keys.F4)]
     internal sealed class HomeExit : MenuItem {
 
         #region Properties

@@ -37,9 +37,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Nulo.Modules.ExtensionManager" Version="1.0.0-alpha" />
-    <PackageReference Include="Nulo.Modules.MultiLanguageManager" Version="1.0.2" />
-    <PackageReference Include="Nulo.Modules.WorkspaceManager" Version="1.1.3" />
+    <PackageReference Include="Nulo.Modules.ExtensionManager" Version="1.0.1-alpha" />
+    <PackageReference Include="Nulo.Modules.MultiLanguageManager" Version="1.0.3" />
+    <PackageReference Include="Nulo.Modules.WorkspaceManager" Version="1.1.4" />
   </ItemGroup>
 
   <ItemGroup>

@@ -33,7 +33,6 @@ namespace Nulo.Core.Pages {
 
             style.SetStyle(MenuStrip);
             style.SetStyle(ToolStrip);
-            style.SetStyle(StatusStrip);
         }
 
         #endregion WorkspaceManager

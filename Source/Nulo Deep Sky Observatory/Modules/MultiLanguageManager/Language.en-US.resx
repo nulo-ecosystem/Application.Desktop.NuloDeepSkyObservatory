@@ -141,6 +141,12 @@
   <data name="Dialog_NewWorkspace_Title" xml:space="preserve">
     <value>New workspace</value>
   </data>
+  <data name="Menu_Home_Exit" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="Menu_Miscellaneous" xml:space="preserve">
+    <value>Miscellaneous</value>
+  </data>
   <data name="Menu_Window" xml:space="preserve">
     <value>Window</value>
   </data>

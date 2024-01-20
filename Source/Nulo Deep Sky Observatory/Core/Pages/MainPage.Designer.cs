@@ -28,7 +28,6 @@
             MenuStrip = new MenuStrip();
             ToolStrip = new ToolStrip();
             ToolStripWorkspaces = new ToolStripDropDownButton();
-            StatusStrip = new StatusStrip();
             TopPanel = new Panel();
             ToolStrip.SuspendLayout();
             TopPanel.SuspendLayout();
@@ -39,7 +38,7 @@
             DockPanel.Dock = DockStyle.Fill;
             DockPanel.Location = new Point(0, 39);
             DockPanel.Name = "DockPanel";
-            DockPanel.Size = new Size(1058, 603);
+            DockPanel.Size = new Size(1058, 625);
             DockPanel.TabIndex = 0;
             // 
             // MenuStrip
@@ -67,18 +66,10 @@
             // 
             ToolStripWorkspaces.Alignment = ToolStripItemAlignment.Right;
             ToolStripWorkspaces.DisplayStyle = ToolStripItemDisplayStyle.Image;
-            ToolStripWorkspaces.Image = Properties.Resources.IconWorkspaces;
+            ToolStripWorkspaces.Image = Properties.Resources.Icon_Menu_Window_Workspaces;
             ToolStripWorkspaces.ImageTransparentColor = Color.Magenta;
             ToolStripWorkspaces.Name = "ToolStripWorkspaces";
             ToolStripWorkspaces.Size = new Size(42, 34);
-            // 
-            // StatusStrip
-            // 
-            StatusStrip.ImageScalingSize = new Size(24, 24);
-            StatusStrip.Location = new Point(0, 642);
-            StatusStrip.Name = "StatusStrip";
-            StatusStrip.Size = new Size(1058, 22);
-            StatusStrip.TabIndex = 0;
             // 
             // TopPanel
             // 
@@ -97,7 +88,6 @@
             ClientSize = new Size(1058, 664);
             Controls.Add(DockPanel);
             Controls.Add(TopPanel);
-            Controls.Add(StatusStrip);
             Icon = (Icon)resources.GetObject("$this.Icon");
             MainMenuStrip = MenuStrip;
             MinimumSize = new Size(1080, 720);
@@ -111,7 +101,6 @@
             TopPanel.ResumeLayout(false);
             TopPanel.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -119,7 +108,6 @@
         private System.Windows.Forms.Panel DockPanel;
         private System.Windows.Forms.MenuStrip MenuStrip;
         private System.Windows.Forms.ToolStrip ToolStrip;
-        private System.Windows.Forms.StatusStrip StatusStrip;
         private System.Windows.Forms.ToolStripDropDownButton ToolStripWorkspaces;
         private Panel TopPanel;
     }

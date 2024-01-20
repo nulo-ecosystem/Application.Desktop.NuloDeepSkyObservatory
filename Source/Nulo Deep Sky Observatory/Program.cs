@@ -13,6 +13,12 @@ namespace Nulo {
 
         [STAThread]
         private static void Main() {
+            var mutex = new Mutex(true, "NuloDeepSkyObservatory2024.1", out bool result);
+            if(!result) {
+                MessageBox.Show("Another instance is already running.");
+                return;
+            }
+
             ApplicationConfiguration.Initialize();
             Application.SetCompatibleTextRenderingDefault(false);
 
@@ -74,6 +80,8 @@ namespace Nulo {
             #endregion Loading Modules
 
             Application.Run(mainPage);
+
+            GC.KeepAlive(mutex);
         }
     }
 }

@@ -3,7 +3,7 @@
 namespace Nulo.Core.Menus {
 
     [Route("miscellaneous"), Group(20), Location(70)]
-    internal sealed class Miscellaneous : MenuItem {
+    internal class Miscellaneous : MenuItem {
 
         #region Properties
 

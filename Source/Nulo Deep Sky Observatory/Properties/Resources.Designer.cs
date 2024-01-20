@@ -83,6 +83,16 @@ namespace Nulo.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Icon_Menu_Home_Exit {
+            get {
+                object obj = ResourceManager.GetObject("Icon_Menu_Home_Exit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Icon_Menu_Window_Workspaces {
             get {
                 object obj = ResourceManager.GetObject("Icon_Menu_Window_Workspaces", resourceCulture);

@@ -131,7 +131,7 @@
             ArtLabel.Padding = new Padding(0, 3, 13, 0);
             ArtLabel.Size = new Size(954, 20);
             ArtLabel.TabIndex = 3;
-            ArtLabel.Text = "Banner made with DALL·E2 and FIREFLY";
+            ArtLabel.Text = "Banner made with DALL·E 3 and FIREFLY";
             ArtLabel.TextAlign = ContentAlignment.TopRight;
             // 
             // CopyrighLabel

@@ -19,6 +19,7 @@ namespace Nulo.Core.Menus {
         #region Properties
 
         public override string Text => Program.MultiLanguageManager.GetText("Menu_Home_Exit");
+        public override Bitmap Icon => Properties.Resources.Icon_Menu_Home_Exit;
 
         #endregion Properties
 

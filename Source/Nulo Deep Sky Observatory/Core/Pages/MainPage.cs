@@ -1,4 +1,5 @@
-﻿using Nulo.Modules.WorkspaceManager.Docking;
+﻿using Nulo.Core.Utilities;
+using Nulo.Modules.WorkspaceManager.Docking;
 
 namespace Nulo.Core.Pages {
 
@@ -45,5 +46,21 @@ namespace Nulo.Core.Pages {
         }
 
         #endregion MultiLanguageManager
+
+        #region WndProc
+
+        protected override void WndProc(ref Message m) {
+            if(m.Msg == NativeMethods.WNDPROC_NDSO_SHOWME) { ShowMe(); }
+            base.WndProc(ref m);
+        }
+
+        private void ShowMe() {
+            if(WindowState == FormWindowState.Minimized) { WindowState = FormWindowState.Maximized; }
+            bool top = TopMost;
+            TopMost = true;
+            TopMost = top;
+        }
+
+        #endregion WndProc
     }
 }
